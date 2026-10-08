@@ -8,4 +8,6 @@ test('Check login for playwright', async ({ page }) => {
     await page.locator('#password').fill('admin123');
     await page.locator('#login-button').click();
 
+    await page.waitForTimeout(10000);
+
 });
